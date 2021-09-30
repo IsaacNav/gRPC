@@ -1,0 +1,16 @@
+{
+  "name": "grpc_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.21.6",
+    "mercurius": "^8.4.2"
+  }
+}
