@@ -108,3 +108,5 @@ typings/
 dist
 dist/
 dist-server/
+
+package-lock.json
