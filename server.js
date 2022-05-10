@@ -1,19 +1,19 @@
-"use strict";
+'use strict';
 
-const fs = require("fs");
-const path = require("path");
-const fastify = require("fastify")({
+const fs = require('fs');
+const path = require('path');
+const fastify = require('fastify')({
   logger: {
-    prettyPrint: require("pino-pretty"),
+    prettyPrint: require('pino-pretty'),
   },
 });
-const { ApolloServer, gql } = require("1-server-fastify");
+const { ApolloServer, gql } = require('1-server-fastify');
 
 const typeDefs = fs.readFileSync(
-  path.join(__dirname, "graphql", "schema.gql"),
-  "utf8"
+  path.join(__dirname, 'graphql', 'schema.gql'),
+  'utf8'
 );
-const resolvers = require("./graphql/resolvers");
+const resolvers = require('./graphql/resolvers');
 
 const server = new ApolloServer({
   typeDefs,
