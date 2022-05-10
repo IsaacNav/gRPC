@@ -7,7 +7,7 @@ const fastify = require("fastify")({
     prettyPrint: require("pino-pretty"),
   },
 });
-const { ApolloServer, gql } = require("apollo-server-fastify");
+const { ApolloServer, gql } = require("1-server-fastify");
 
 const typeDefs = fs.readFileSync(
   path.join(__dirname, "graphql", "schema.gql"),
